@@ -113,6 +113,21 @@ function MM_swapImage() { //v3.0
 }
 //-->
 </script>
+<script type="text/x-javascript">
+    //codigo javascript
+     
+    var isCtrl = false;
+    document.onkeyup=function(e){
+    if(e.which == 17) isCtrl=false;
+    }
+    document.onkeydown=function(e){
+    if(e.which == 17) isCtrl=true;
+    if(e.which == 80 && isCtrl == true) {
+    //Combinancion de teclas CTRL+P y bloquear su ejecucion en el navegador
+    return false;
+    }
+    }
+</script>
 </head>
 
 <body onload="MM_preloadImages('images/next2.png','images/previous2.png')">
