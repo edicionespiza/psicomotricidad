@@ -68,7 +68,21 @@ body
 </style>
 <script type="text/javascript" src="js/swfobject.js"></script>
 <script type="text/javascript" src="js/fbscript.js"></script>
-
+<script type="text/x-javascript">
+    //codigo javascript
+     
+    var isCtrl = false;
+    document.onkeyup=function(e){
+    if(e.which == 17) isCtrl=false;
+    }
+    document.onkeydown=function(e){
+    if(e.which == 17) isCtrl=true;
+    if(e.which == 80 && isCtrl == true) {
+    //Combinancion de teclas CTRL+P y bloquear su ejecucion en el navegador
+    return false;
+    }
+    }
+</script>
 </head>
 <body>
 <!-- SWFObject's dynamic embed method replaces this alternative HTML content with Flash content when enough 
